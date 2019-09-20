@@ -1,0 +1,3 @@
+
+class facture_bailleurs {
+}

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="1300" whenNoDataType="BlankPage" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="81d79fe7-9750-46b0-94cf-65da38c668a0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="4"/>
+	<property name="ireport.y" value="223"/>
+	<parameter name="entreprise_nom_para" class="java.lang.String"/>
+	<parameter name="bailleurs_nom_para" class="java.lang.String"/>
+	<parameter name="preneurs_loyer_mensuel_para" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="284" y="0" width="100" height="20" uuid="952d6b5e-e86d-4fe2-acc2-a744d699b9c4"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{entreprise_nom_para}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="437" y="14" width="100" height="20" uuid="79d10c5d-6062-4eda-83a5-267cac40cffc"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bailleurs_nom_para}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="853" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="52" uuid="bc89fc04-3d95-4312-9952-a18698c282e0"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[L’Agence Immobilière dénommée « MAF-IMMOBILIER » Société à Responsabilité Limitée, au capital de UN MILLION (1 000 000) de FRANCS CFA, ayant son siège social à Abidjan immatriculée au registre du commerce d’Abidjan sous le n° CI-ABJ- 2011B-2652
+Tel : 22.42.23.79 Cel : 58.42.89.51 email Représentée par, sa gérante, Mme TANOH EBA Marda
+Agissant au nom et comme mandataire du propriétaire Monsieur 	
+désigné dans tout ce qui va suivre « LE BAILLEUR ou rAGENCE».]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="52" width="555" height="43" uuid="e7f13fc8-6ed5-497e-9f9c-ad6af47f5f21"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="95" width="555" height="134" uuid="2a591ea8-d1c7-4dc4-a898-45ce6981a76a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[D’UNE PART
+Et	Né	à		 Profession	
+	BP	ABIDJAN			
+Tél. :		 Cel :	
+Désigné dans tout ce qui va suivre « LE PRENEUR ».
+D’AUTRE PART
+LESQUELS ont convenu et arrêté le contrat de bail qui suit :
+BAIL
+Le BAILLEUR donne à bail à loyer à titre d’habitation, pour une durée, sous les conditions et moyennant le prix ci- après indiqués ;
+Au PRENEUR qui accepte, les biens immobiliers dont la désignation suit :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="229" width="555" height="242" uuid="37fa3e67-2e8b-4a13-8e47-5a702ec30773"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[DESIGNATION
+Une parcelle de terrain urbain bâti, sise au		 formant le lot n°	de	
+Les constructions y édifiées consistant en	de	(....) pièces principales comprenant :	séjour,
+... chambres, ... salle à manger, ... salles d’eau, ... salle de bain, 	bureau, ... cuisine, ... dépendances, ...
+piscine, ....jardin.
+Le PRENEUR déclare connaître parfaitement le bien loué pour l’avoir vu et visité en vue du présent bail.
+ETAT DES UEUX
+Le PRENEUR prendra les lieux loués dans l’état où ils se trouveront lors de l’entrée en jouissance et les rendra en fin de bail tels qu’il les aura reçus suivant l’état des lieux qui aura été dressé à la date du 	contradictoirement entre les parties .
+Le PRENEUR veillera à la remise des lieux dans leur état primitif (agencement, enduit peinture intérieure, etc). A l’expiration du bail, un pré-état des lieux sera dressé un mois au moins avant l’expiration du bail.
+TITRE I - CLAUSES ET CONDITIONS PARTICULIERES
+ARTICLE 1 - DUREE DU BAIL :
+Le présent bail est consenti et accepté pour une durée d une année entière, qui court à compter du 01/04/2013 pour se terminer le 31/03/2014
+Il ne peut pas être rompu avant le terme de la première (1er®) année pour quelque raison que ce soit.
+En cas de résiliation avant terme, la partie qui aura pris l’initiative de la résiliation du bail devra payer à l’autre une indemnité forfaitaire égale à deux (2) mois de loyer qui sont exigibles au plus tard à la fin du préavis de trois (3) mois, période pendant laquelle les loyers restent dus.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="471" width="555" height="118" uuid="de22941b-a39d-4631-a1a2-c875072cbdd3"/>
+				<textElement>
+					<font size="14" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ARTICLE 2 - RENOUVELLEMENT DU BAIL :
+A l’expiration de la première année, ledit bail se renouvellera par tacite reconduction ou de manière expresse ; et il pourra également être résilié à tout moment, à charge par celle des parties qui voudra faire cesser le présent bail de donner à l’autre un préavis de trois (3) mois par lettre remise contre décharge ou par acte extrajudiciaire.
+ARTICLE 3-LOYER:
+Le présent bail est consenti et accepté moyennant un loyer mensuel de	mille {.... 000) FRANCS
+nor		“*	1	1 * "]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="608" width="555" height="78" uuid="77db4632-db04-4a16-92c2-475050b4d777"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[ARTICLE 3-LOYER:
+Le présent bail est consenti et accepté moyennant un loyer mensuel de	mille {.... 000) FRANCS
+nor		“*	1	1 * "]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="143" y="639" width="100" height="20" uuid="cc5ed0a8-95d0-499c-9660-3fedeb9cc586"/>
+				<textFieldExpression><![CDATA[$P{preneurs_loyer_mensuel_para}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="686" width="555" height="125" uuid="cd416aa9-bf89-478b-88bd-a97bd60dae36"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[cas de chèque impayé, le PRENEUR sera tenu de payer 10 000 F CFA pour les frais de recouvrement dudit chèque.
+Le loyer est portable et non quérable payé contre une quittance numérotée délivrée immédiatement par l’AGENCE.
+Passé le 15 du mois, le PRENEUR sera assujetti à des pénalités pour retard de paiement fixé à 10% du montant des loyers impayés.
+ARTICLE 4- REVISION DU LOYER :
+Les parties conviennent que le loyer pourra être révisé tous les deux (2) ans. A défaut d’accord entre les parties, le nouveau montant du loyer prendra en compte le taux de référence des loyers fixé annuellement par le Chambre du Droit des Affaires et de l’immobilier (C.DA.IM).
+ARTICLE 5 - DEPOT DE GARANTIE fou CAUTION) :]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="407">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="407" uuid="f18ed315-33b1-4d00-8ee3-edbd74b9e345"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[A titre de provision et pour la garantie de l’exécution des clauses du présent contrat, le PRENEUR a versé entre les
+mains du BAILLEUR, la somme de 	 mille (	 000) FRANCS CFA représentant
+	(....) mois de loyer en guise de dépôt de garantie (ou caution).
+Laquelle somme sera conservée par le BAILLEUR pour le compte du PRENEUR durant toute la durée du bail. Elle est non productive d’intérêts et ne pourra pas servir au paiement du loyer en fin de bail.
+A l’expiration dudit bail, elle sera restituée au PRENEUR après paiement de tous les loyers dus par lui et exécution de toutes les réparations lui incombant, ainsi que des résiliations des abonnements CIE et SODECI.
+ARTICLE 6 - DESTINATION DES UEUX :
+Les lieux loués devront servir au PRENEUR à un usage d’habitation à l’exclusion de tout autre usage, même temporairement.
+TITRE II - CHARGES ET CONDITIONS GENERALES
+Le présent bail est consenti et accepté sous les charges et conditions ordinaires et de droit en pareille matière que le PRENEUR, s’oblige à exécuter et accomplir sous peine de tous dommages- intérêts et même de résiliation immédiate et de plein droit du présent bail si bon semblait au BAILLEUR, savoir :
+ARTICLE 7 - CESSION DE BAIL OU SOUS-LOCATION :
+La présente location a été consentie au PRENEUR « intuitu personae ». Toute cession de bail, sous-location ou simple occupation en tout ou partie des lieux par un tiers, est rigoureusement interdite à peine de résiliation immédiate du présent contrat de location à la simple constatation de rinfraction et sans qu’il soit besoin de recourir à la procédure de mise en demeure.
+ARTICLE 8 : MOBILIER :
+Le PRENEUR s’engage à garnir et à tenir constamment garni les lieux loués, de meubles et objets mobiliers lui appartenant personnellement en qualité et de valeurs suffisantes pour répondre du paiement de loyers et de l’exécution de toutes les conditions du bail.
+ARTICLE 9 : ENTRETIEN ET REPARATIONS :
+Le PRENEUR entretiendra les lieux loués en bon état de réparation locative, en jouira en bon père de famille, suivant leur usage et ne pourra en aucun cas, rien faire ni laisser, qui puisse les détériorer.
+Il supportera toutes réparations qui deviendraient nécessaires par la suite et toutes dégradations résultant de son fait ou de celui de son personnel.
+Il aura entièrement à sa charge, sans recours contre le BAILLEUR, l’entretien complet de la plomberie, de l’électricité, des aménagements intérieurs, des enduits, des sols en marbre, des sols carrelés, de tous les sanitaires sans exception et également la réfection des peintures intérieures tous les deux (2) ans.
+Les bris de glaces, détérioration des fenêtres, des baies vitrées, des châssis naccos, des grilles et volets métalliques dus au fait que le PRENEUR ne les a pas fait fbnctionnés régulièrement à l’exception de ceux provoqués par les guerres civiles, les émeutes et tremblement de terre, resteront à la charge du PRENEUR qui en supportera les réparations.]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>

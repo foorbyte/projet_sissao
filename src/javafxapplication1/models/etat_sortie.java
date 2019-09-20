@@ -1,0 +1,3 @@
+
+class etat_sortie {
+}

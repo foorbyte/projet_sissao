@@ -1,0 +1,3 @@
+
+class declarations_fiscales {
+}

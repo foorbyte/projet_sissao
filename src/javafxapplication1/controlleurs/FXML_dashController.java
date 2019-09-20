@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javafxapplication1.controlleurs;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.Initializable;
+
+/**
+ * FXML Controller class
+ *
+ * @author freexx
+ */
+public class FXML_dashController implements Initializable {
+
+    /**
+     * Initializes the controller class.
+     */
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }    
+    
+}
+/*
+https://www.immobilierloyer.com/preferences.php
+https://www.gererseul.com/demonstration-application-de-gestion-immobiliere/
+http://www.gestion-immo.net/gestion-immobiliere-structure
+
+http://pise.info/modelisation/enonces.htm#haut
+https://www.gum-gum-streaming.co/my-hero-academia-11-vf/
+*/

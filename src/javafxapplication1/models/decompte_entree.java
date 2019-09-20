@@ -1,0 +1,3 @@
+
+class decompte_entree {
+}

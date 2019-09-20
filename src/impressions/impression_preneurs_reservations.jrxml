@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="555" pageHeight="820" columnWidth="535" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4ebe8c82-c72b-4c20-9a86-b25af272f9dd">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="preneurs_nom" class="java.lang.String"/>
+	<parameter name="preneurs_prenom" class="java.lang.String"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50">
+			<staticText>
+				<reportElement x="201" y="18" width="133" height="32" uuid="bbdc7695-97c5-47cb-9661-bef681ffc831"/>
+				<text><![CDATA[DECOMPTE DE LOCATION]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="802">
+			<break>
+				<reportElement x="0" y="640" width="100" height="1" uuid="210f86b5-826d-49fc-aea5-7958792365b3"/>
+			</break>
+			<staticText>
+				<reportElement x="0" y="0" width="156" height="17" uuid="34244f49-be46-4be3-9db5-b71bc271268e"/>
+				<text><![CDATA[Nom et prénoms du locataire :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="39" width="413" height="20" uuid="5ddbe8d7-dac0-46bd-b065-a05062a58050"/>
+				<text><![CDATA[Déclare faire la réservation du bien ci-après désigné en vue de sa prise en location :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="156" y="0" width="100" height="20" uuid="30203b3d-2917-4434-940e-a8824c2edc87"/>
+				<textFieldExpression><![CDATA[$P{preneurs_nom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="256" y="0" width="100" height="20" uuid="d37b8d9f-268c-4497-b4a9-d8f93a4d3843"/>
+				<textFieldExpression><![CDATA[$P{preneurs_prenom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="356" y="0" width="100" height="20" uuid="3e03b924-cac2-4304-ba72-da473b9ddaf3"/>
+				<textFieldExpression><![CDATA[$P{parameter1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

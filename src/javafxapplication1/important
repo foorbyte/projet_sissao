@@ -1,0 +1,95 @@
+javafx dao
+https://www.youtube.com/watch?v=Vct4ofhgfu4&index=66&list=PLrpFHrTakOxKuYA_au7QJjvv0gLPq48Us
+
+https://www.youtube.com/watch?v=_eCn4pLw350&t=11s
+https://www.youtube.com/watch?v=6kL2pQ9KABg&t=2s
+https://www.youtube.com/watch?v=AcvVapcj3ZY&index=4&list=PLp7jZY_ad41tA3x8UFXphWcsYYFAUqxbm&t=0s
+https://www.youtube.com/watch?v=jGJqVRTcDWI&list=PL7ubUtBKwzRkrV4gAPbtcUGOYq3j8yUW0
+
+https://www.youtube.com/playlist?list=PLR7lDCnFejO_vlNeE6Ghl6gps38MvJiTm
+
+https://www.youtube.com/watch?v=X0j07WVKVtk&t=0s&list=PLA1W9ojL1mVwql7mYQrMqHJ7GEb9xEg8q&index=3
+
+https://www.youtube.com/user/bbodevby/playlists
+
+https://www.youtube.com/playlist?list=PLd4Jo6d-yhDJDu6z0luwaKpW2QD-jGVGc
+
+https://www.youtube.com/playlist?list=PLVo4QEZoUs5G88wJ2AajTIS33oFF8R5N-&disable_polymer=true
+
+https://www.youtube.com/watch?v=ylsEcbGEGxU&t=931s jpa
+
+https://www.youtube.com/playlist?list=PLA7e3zmT6XQUR-PrG8OQ9nJu2jT5xcOy0
+
+simple
+https://www.youtube.com/watch?v=3a0sQvM0lDA
+https://www.youtube.com/watch?v=M4g3ncXMiVw
+https://www.youtube.com/watch?v=AKUMdJSzhd0&list=PLxuW9YPYYBSZwKD5qRWibbbtLaXc6Ss0E&t=0s&index=6
+https://www.youtube.com/watch?v=pZhATZRiwKg&t=738s
+https://www.youtube.com/watch?v=UKzx4NRaZyM&t=963s
+rashid
+https://www.youtube.com/watch?v=LoiQVoNil9Q&t=10s
+genou coder
+https://www.youtube.com/watch?v=XZAQxZcjSVE&t=488s
+https://www.youtube.com/watch?v=cEJzaFUjGMU&list=PL4h6ypqTi3RR_bhBk6PtLfD83YkaJXXxw
+
+java dao
+https://www.youtube.com/watch?v=d6OOxLd1Ars
+https://www.youtube.com/watch?v=8QOjN89wA-Y
+https://www.youtube.com/watch?v=IWcV-9Lcu64
+
+https://www.youtube.com/watch?v=5Pyb7l9kMdk&t=0s&index=3&list=PLbk6OrRAzaccHTYYCuSEZ6DFyD1M-3TyG
+https://www.youtube.com/watch?v=BgRfXzSuZCw&list=PLbk6OrRAzacfLPpW_wsrrp02muSPfnQM_&index=2
+
+https://www.youtube.com/playlist?list=PL70BFBF88CE38C556
+
+https://www.youtube.com/watch?v=8bJCfiQAECo
+
+https://www.youtube.com/playlist?list=PL8enlRskAhbJqzxxvpmlbAkTlgTchAChz
+https://www.youtube.com/watch?v=Ly0cgwUF_as&list=PL8enlRskAhbKSRnrmrx6AQyQorKGHADqb&index=11&t=0s
+https://www.youtube.com/playlist?list=PL8enlRskAhbJ8qv2s-TFR9_oiETB2x71I
+
+https://www.youtube.com/watch?v=obxsO3Rwk34
+
+difficile
+https://www.youtube.com/watch?v=vgsN114Q9ao
+
+jdbc servlet
+
+picture in DB
+https://www.youtube.com/watch?v=rDtSUSK2kmk
+
+jcombox
+https://www.youtube.com/watch?v=hSghISXr7b8
+
+search
+
+https://www.youtube.com/watch?v=MY4FavUyFNQ
+https://www.youtube.com/watch?v=uuhEb0k3vVE
+
+
+https://www.youtube.com/watch?v=G4JeKZ6nDUI
+https://www.youtube.com/results?search_query=java+database+table
+https://www.youtube.com/watch?v=HE6ZHSuHcu0&t=0s&list=PLP63X8dYTuaJTAMBZUHScyUCsJVPjSQgJ&index=6
+
+
+
+
+root@host# mysql -u root -p
+Enter password:*******
+mysql> use TUTORIALS;
+Database changed
+mysql> CREATE TABLE tutorials_tbl(
+   -> tutorial_id INT NOT NULL AUTO_INCREMENT,
+   -> tutorial_title VARCHAR(100) NOT NULL,
+   -> tutorial_author VARCHAR(40) NOT NULL,
+   -> submission_date DATE,
+   -> PRIMARY KEY ( tutorial_id )
+   -> );
+Query OK, 0 rows affected (0.16 sec)
+mysql>
+
+https://www.youtube.com/watch?v=MRPIu2ZbHbY&list=PLuqsKySOgRU8O8_nv-oCOj2Ygvbm4vUda&index=10&t=0s
+
+//add tzble and colum
+https://stackoverflow.com/questions/41113453/how-to-alter-table-in-mysql-and-add-column-in-java
+Atelier de genie logiciel-CASE tool

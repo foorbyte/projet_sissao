@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="1044.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.controlleurs.Controller_Preneurs">
+   <children>
+      <GridPane layoutX="71.0" layoutY="77.0" prefHeight="403.0" prefWidth="551.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="257.0" minWidth="10.0" prefWidth="257.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="116.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="47.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="86.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Nom" />
+            <Label text="Prénom" GridPane.rowIndex="1" />
+            <Label text="Date de naissance" GridPane.rowIndex="2" />
+            <TextField fx:id="saisie_preneurs_nom" GridPane.columnIndex="1" />
+            <TextField fx:id="saisie_preneurs_prenom" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="saisie_preneurs_addresse" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <DatePicker fx:id="saisie_preneurs_date" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Adresse" GridPane.rowIndex="3" />
+            <Label text=" loyer mensuel" GridPane.rowIndex="4" />
+            <Label text="Loyer du" GridPane.rowIndex="5" />
+            <Label text="au" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label text="Taxes assainissement et voirie (5,66%)" GridPane.rowIndex="7" />
+            <Label text="Dépôt de garantie ou Caution ( mois)" GridPane.rowIndex="8" />
+            <Label text="Caution CIE/SODECI" GridPane.rowIndex="9" />
+            <Label text="Honoraires de transaction (1 mois)" GridPane.rowIndex="10" />
+            <Label text="TPS sur honoraires de transaction (18%)" GridPane.rowIndex="11" />
+            <Label text="Enregistrement de bail + Timbre (loyer annuel x 2,5% + 10 000)" GridPane.rowIndex="12" />
+            <Label text="Honoraire de rédaction" GridPane.rowIndex="13" />
+            <Label text="Frais d’état des lieux" GridPane.rowIndex="14" />
+            <Label text="Autre(préciser)" GridPane.rowIndex="15" />
+            <TextField fx:id="saisie_loye_menuel" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <DatePicker fx:id="saisie_date_debut_loyer" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <DatePicker fx:id="saisie_date_fin_loyer" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="saisie_taxes_assainissement" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="saisiee_caution" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="saisie_caution_consommation" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <TextField fx:id="saisie_honoraires_transaction" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <TextField fx:id="saisie_honoraires_transaction_tps" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <TextField fx:id="saisie_frais_etat_lieux" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <TextField fx:id="saisie_honoraire_redaction" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <TextField fx:id="saisie__enregistrement_bail_timbre" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <TextField fx:id="saisie_autre" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Label text="Charges locatives" GridPane.rowIndex="6" />
+            <TextField fx:id="saisie_charges_locatives" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <Button fx:id="bouton_ajouter" layoutX="27.0" layoutY="541.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="115.0" text="Ajouter" />
+      <TableView fx:id="table_preneurs" layoutX="661.0" layoutY="332.0" prefHeight="200.0" prefWidth="380.0">
+        <columns>
+          <TableColumn fx:id="colonne_id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="colonne_nom" prefWidth="75.0" text="nom" />
+            <TableColumn fx:id="colonne_prenom" prefWidth="75.0" text="prenom" />
+            <TableColumn fx:id="colonne_date_naissance" prefWidth="75.0" text="date de naissance" />
+            <TableColumn fx:id="colonne_address" prefWidth="75.0" text="addresse" />
+        </columns>
+      </TableView>
+      <Button fx:id="bouton_supprier" layoutX="213.0" layoutY="541.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="115.0" text="Supprimer" />
+      <Button fx:id="bouton_modifier_preneurs" layoutX="668.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="115.0" text="Modifier" />
+      <Button fx:id="bouton_afficher_preneur" layoutX="531.0" layoutY="541.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="148.0" text="Charger la table" />
+      <Button layoutX="372.0" layoutY="587.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="115.0" text="Rechercher" />
+      <ListView fx:id="list_vieww" layoutX="874.0" layoutY="144.0" prefHeight="181.0" prefWidth="148.0" />
+      <Button fx:id="bouton_Imprimer" layoutX="522.0" layoutY="587.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="115.0" text="Imprimer" />
+      <TextField fx:id="test" layoutX="27.0" layoutY="587.0" />
+      <Button fx:id="bouton_rechercher_id" layoutX="641.0" layoutY="88.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="142.0" text="Rechercher par l'id" />
+      <TextField fx:id="saisie_recherche" layoutX="814.0" layoutY="88.0" />
+   </children>
+</AnchorPane>
