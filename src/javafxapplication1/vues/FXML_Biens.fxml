@@ -4,9 +4,11 @@
 <?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -14,21 +16,29 @@
 
 <AnchorPane id="AnchorPane" prefHeight="704.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.controlleurs.FXML_BiensController">
    <children>
-      <GridPane fx:id="gridpane_essai" layoutX="10.0" layoutY="67.0" prefHeight="323.0" prefWidth="764.0">
+      <GridPane fx:id="gridpane_essai" layoutX="10.0" layoutY="68.0" prefHeight="435.0" prefWidth="693.0">
          <columnConstraints>
-            <ColumnConstraints minWidth="10.0" prefWidth="300.0" />
-            <ColumnConstraints minWidth="10.0" prefWidth="400.0" />
-            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints maxWidth="266.0" minWidth="10.0" prefWidth="188.0" />
+            <ColumnConstraints maxWidth="335.0" minWidth="10.0" prefWidth="202.0" />
+            <ColumnConstraints maxWidth="232.0" minWidth="10.0" prefWidth="139.0" />
+            <ColumnConstraints maxWidth="200.0" minWidth="10.0" prefWidth="177.0" />
          </columnConstraints>
          <rowConstraints>
+            <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="27.0" />
+            <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="26.0" />
-            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="48.0" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="30.0" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" />
             <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" />
             <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" />
@@ -36,34 +46,47 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" />
          </rowConstraints>
          <children>
-            <JFXTextField fx:id="saisie_nom_biens" labelFloat="true" promptText="localisation du bien" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <JFXTextField fx:id="saisie_numero_biens" labelFloat="true" layoutX="110.0" layoutY="42.0" promptText="au lot numero:" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <JFXTextField fx:id="saisie_de" labelFloat="true" layoutX="110.0" layoutY="72.0" promptText="de " GridPane.rowIndex="3" />
-            <JFXTextField fx:id="saisie_en" labelFloat="true" layoutX="110.0" layoutY="102.0" promptText="en" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <JFXTextField fx:id="saisie_nombre_piece_total_biens" labelFloat="true" layoutX="110.0" layoutY="132.0" promptText="le nombre de pieces" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Label text="composer de :" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <JFXTextField fx:id="saisie_nom_pieces_biens" labelFloat="true" layoutX="10.0" layoutY="102.0" promptText="Saisir nom de piece(ex salon, chambre, ..)" GridPane.rowIndex="8" />
-            <JFXTextField fx:id="saisie_nombre_piece" labelFloat="true" layoutX="10.0" layoutY="222.0" promptText="Le nombre" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-            <JFXComboBox fx:id="choix_bailleurs" promptText="Choisir le proprietaire ou ajouter un nouveau" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-            <JFXButton fx:id="bouton_ajout_bailleurs" buttonType="RAISED" prefHeight="27.0" prefWidth="152.0" ripplerFill="BLACK" text="Ajouter le proprietaire" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="9" />
-            <JFXComboBox fx:id="choix_preneurs" layoutX="131.0" layoutY="272.0" promptText="Choisir le locataire ou ajouter un nouveau" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-            <JFXButton fx:id="bouton_ajouter_preneurs" buttonType="RAISED" layoutX="325.0" layoutY="272.0" prefHeight="27.0" prefWidth="152.0" ripplerFill="BLACK" text="Ajouter un preneur" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="10" />
-            <JFXTextField fx:id="saisie_montant_caution_biens" labelFloat="true" layoutX="131.0" layoutY="178.0" promptText="Le montant de la caution" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <JFXRadioButton fx:id="disponible_biens" text="disponible" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <Label text="La disponibilite du bien" GridPane.rowIndex="5" />
-            <JFXRadioButton fx:id="indisponible_bien" layoutX="253.0" layoutY="169.0" text="indisponible" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <JFXComboBox fx:id="choix_preneurs1" layoutX="131.0" layoutY="299.0" promptText="Choisir la piece" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <JFXTextField fx:id="saisie_localisation_biens" labelFloat="true" promptText="localisation du bien" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin></JFXTextField>
+            <JFXTextField fx:id="saisie_numero_biens" labelFloat="true" layoutX="110.0" layoutY="42.0" promptText="au lot numero:" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <JFXTextField fx:id="saisie_de_inconnu" labelFloat="true" layoutX="110.0" layoutY="72.0" promptText="de " GridPane.rowIndex="7" />
+            <Label text="composer de :" GridPane.rowIndex="11" />
+            <JFXTextField fx:id="saisie_nombre_piece" labelFloat="true" layoutX="10.0" layoutY="222.0" promptText="Le nombre" GridPane.columnIndex="3" GridPane.rowIndex="19" />
+            <JFXComboBox fx:id="choix_bailleurs" promptText="Choisir le proprietaire" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <tooltip>
+                  <Tooltip text="Choisir le proprietaire ouChoisir le proprietaire ou ajouter un nouveau" />
+               </tooltip></JFXComboBox>
+            <JFXButton fx:id="bouton_ajout_bailleurs" buttonType="RAISED" prefHeight="27.0" prefWidth="182.0" ripplerFill="BLACK" text="Ajouter un proprietaire" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="saisie_montant_caution_biens" labelFloat="true" layoutX="131.0" layoutY="178.0" promptText="Le montant de la caution" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <JFXRadioButton fx:id="disponible_biens" text="disponible" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Label text="La disponibilite du bien" GridPane.rowIndex="9" />
+            <JFXRadioButton fx:id="indisponible_bien" layoutX="253.0" layoutY="169.0" text="indisponible" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <JFXTextField fx:id="saisie_sejou_nombre" labelFloat="true" promptText="salle de sejour" GridPane.rowIndex="13" />
+            <JFXTextField fx:id="saisie_salle_eau_nombre" labelFloat="true" promptText="salle d'eau" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+            <JFXTextField fx:id="saisie_bain_nombre" labelFloat="true" promptText="Salle de bain" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+            <JFXTextField fx:id="saisie_salle_manger_nombre" labelFloat="true" promptText="Salle a manger" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+            <JFXTextField fx:id="saisi_bureau_nombre" labelFloat="true" promptText="Bureau" GridPane.rowIndex="15" />
+            <JFXTextField fx:id="saisie_cuisine_nombre" labelFloat="true" layoutX="10.0" layoutY="333.0" promptText="Cuisine" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <JFXTextField fx:id="saisie_dependance_nombre" labelFloat="true" layoutX="194.0" layoutY="333.0" promptText="Dependance" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+            <JFXTextField fx:id="saisie_piscine_nombre" labelFloat="true" layoutX="393.0" layoutY="333.0" promptText="piscine" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+            <JFXTextField fx:id="saisie_jardin_nombre" labelFloat="true" layoutX="529.0" layoutY="333.0" promptText="Jardin" GridPane.rowIndex="17" />
+            <JFXTextField fx:id="saisie_nom_biens" labelFloat="true" layoutX="194.0" layoutY="96.0" promptText="designation du bien" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <JFXTextField fx:id="saisie_salle_chambre_nombre" labelFloat="true" layoutX="194.0" layoutY="377.0" promptText="Salle de chambre" GridPane.columnIndex="1" GridPane.rowIndex="13" />
          </children>
       </GridPane>
       <Label layoutX="236.0" layoutY="22.0" text="Formulaire des biens" />
-      <JFXButton fx:id="bouton_validation" layoutX="590.0" layoutY="508.0" text="Valider" />
-      <JFXButton fx:id="bouton_imprimer" layoutX="483.0" layoutY="508.0" text="Valider" />
-      <TableView editable="true" layoutX="47.0" layoutY="412.0" prefHeight="196.0" prefWidth="341.0">
+      <JFXButton fx:id="bouton_validation" layoutX="650.0" layoutY="652.0" text="Valider" />
+      <JFXButton fx:id="bouton_imprimer" layoutX="568.0" layoutY="652.0" text="Imprimer" />
+      <TableView fx:id="tableau" editable="true" layoutX="799.0" layoutY="195.0" prefHeight="196.0" prefWidth="391.0">
         <columns>
-          <TableColumn prefWidth="136.0" text="nom de la piece" />
-            <TableColumn prefWidth="147.0" text="nombre de piece" />
+          <TableColumn fx:id="tableau_col_nom_piece" prefWidth="136.0" text="nom de la piece" />
+            <TableColumn fx:id="tableau_col_nombre_piece" prefWidth="147.0" text="nombre de piece" />
           <TableColumn prefWidth="47.0" text="C1" />
         </columns>
       </TableView>
+      <JFXTextField fx:id="saisie_date_etat_lieux" labelFloat="true" layoutX="799.0" layoutY="68.0" promptText="Date de la visite d'etat des lieux" />
+      <JFXTextField fx:id="saisie_conversion_loyer" labelFloat="true" layoutX="799.0" layoutY="116.0" promptText="conversion du moyer en mois" />
    </children>
 </AnchorPane>

@@ -75,7 +75,7 @@ public class Controller_Bailleurs implements Initializable{
     boolean  verifier_execution_base_donnees ;
     boolean verifier_modification_base_donnees;
     
-    //-------- FIL CHOOSSER ---------
+    //-------- FILE CHOOSSER ---------
     private final FileChooser fileChooser = new FileChooser();
     private final Desktop desktop = Desktop.getDesktop();
     
